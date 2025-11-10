@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_4ae77a84f6f01b926689229648575fcb {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_4ae77a84f6f01b926689229648575fcb" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_4ae77a84f6f01b926689229648575fcb = L.map(
+                "map_4ae77a84f6f01b926689229648575fcb",
+                {
+                    center: [46.603354, 1.888334],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 6,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_52bcddcafa7f11a71196d84f32f898db = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_52bcddcafa7f11a71196d84f32f898db.addTo(map_4ae77a84f6f01b926689229648575fcb);
+        
+    
+            var circle_marker_c41df278c523e76cbabf89a199b5149e = L.circleMarker(
+                [48.8567, 2.3522],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 30.0, "stroke": true, "weight": 3}
+            ).addTo(map_4ae77a84f6f01b926689229648575fcb);
+        
+    
+        var popup_69659c2d5d19c842d48f2a7cff43f8f5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_26f6ecf76a895acf595622e61d342578 = $(`<div id="html_26f6ecf76a895acf595622e61d342578" style="width: 100.0%; height: 100.0%;">Paris: 11060000 habitants</div>`)[0];
+                popup_69659c2d5d19c842d48f2a7cff43f8f5.setContent(html_26f6ecf76a895acf595622e61d342578);
+            
+        
+
+        circle_marker_c41df278c523e76cbabf89a199b5149e.bindPopup(popup_69659c2d5d19c842d48f2a7cff43f8f5)
+        ;
+
+        
+    
+    
+            var circle_marker_c5f810ef82287e2983fca8fe965ab458 = L.circleMarker(
+                [44.84, -0.58],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_4ae77a84f6f01b926689229648575fcb);
+        
+    
+        var popup_45aab69c62bb94d312083ec63abdbe98 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0237624f6a8e7b3f4ad4d521b52049b7 = $(`<div id="html_0237624f6a8e7b3f4ad4d521b52049b7" style="width: 100.0%; height: 100.0%;">Bordeaux: 994920 habitants</div>`)[0];
+                popup_45aab69c62bb94d312083ec63abdbe98.setContent(html_0237624f6a8e7b3f4ad4d521b52049b7);
+            
+        
+
+        circle_marker_c5f810ef82287e2983fca8fe965ab458.bindPopup(popup_45aab69c62bb94d312083ec63abdbe98)
+        ;
+
+        
+    
+    
+            var circle_marker_9d821da359fefa69e4f6b7a2f94f8324 = L.circleMarker(
+                [43.2964, 5.37],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_4ae77a84f6f01b926689229648575fcb);
+        
+    
+        var popup_79fbefc90f845fa9700f20ef8732f58c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a24657fa790b0e0e985031f7ec3d7fc2 = $(`<div id="html_a24657fa790b0e0e985031f7ec3d7fc2" style="width: 100.0%; height: 100.0%;">Marseille: 873076 habitants</div>`)[0];
+                popup_79fbefc90f845fa9700f20ef8732f58c.setContent(html_a24657fa790b0e0e985031f7ec3d7fc2);
+            
+        
+
+        circle_marker_9d821da359fefa69e4f6b7a2f94f8324.bindPopup(popup_79fbefc90f845fa9700f20ef8732f58c)
+        ;
+
+        
+    
+    
+            var circle_marker_06e2d91f03006bc941206e4534eea122 = L.circleMarker(
+                [45.76, 4.84],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_4ae77a84f6f01b926689229648575fcb);
+        
+    
+        var popup_994bd97c831edc2c02a5bb16caf206cd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_42f46a7183e2147b5358f6d61b4f93c7 = $(`<div id="html_42f46a7183e2147b5358f6d61b4f93c7" style="width: 100.0%; height: 100.0%;">Lyon: 522250 habitants</div>`)[0];
+                popup_994bd97c831edc2c02a5bb16caf206cd.setContent(html_42f46a7183e2147b5358f6d61b4f93c7);
+            
+        
+
+        circle_marker_06e2d91f03006bc941206e4534eea122.bindPopup(popup_994bd97c831edc2c02a5bb16caf206cd)
+        ;
+
+        
+    
+    
+            var circle_marker_074099bff9563c0cd718236cc1435a85 = L.circleMarker(
+                [43.6045, 1.444],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_4ae77a84f6f01b926689229648575fcb);
+        
+    
+        var popup_8428659dff37942eb7ebb97befab93b2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_35954b777f33a39623054b171222d3bf = $(`<div id="html_35954b777f33a39623054b171222d3bf" style="width: 100.0%; height: 100.0%;">Toulouse: 504078 habitants</div>`)[0];
+                popup_8428659dff37942eb7ebb97befab93b2.setContent(html_35954b777f33a39623054b171222d3bf);
+            
+        
+
+        circle_marker_074099bff9563c0cd718236cc1435a85.bindPopup(popup_8428659dff37942eb7ebb97befab93b2)
+        ;
+
+        
+    
+    
+            var circle_marker_8dcb91c43d9598306c06b3411ae28fd2 = L.circleMarker(
+                [43.7034, 7.2663],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_4ae77a84f6f01b926689229648575fcb);
+        
+    
+        var popup_ccedb9c41804e5c81aa68d0280101481 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_71762d4e4d7b15c4d28f01e3f43fb7e9 = $(`<div id="html_71762d4e4d7b15c4d28f01e3f43fb7e9" style="width: 100.0%; height: 100.0%;">Nice: 348085 habitants</div>`)[0];
+                popup_ccedb9c41804e5c81aa68d0280101481.setContent(html_71762d4e4d7b15c4d28f01e3f43fb7e9);
+            
+        
+
+        circle_marker_8dcb91c43d9598306c06b3411ae28fd2.bindPopup(popup_ccedb9c41804e5c81aa68d0280101481)
+        ;
+
+        
+    
+    
+            var circle_marker_c84b5572febad2a722288fe9d1a87b78 = L.circleMarker(
+                [47.2181, -1.5528],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_4ae77a84f6f01b926689229648575fcb);
+        
+    
+        var popup_ce4cf390809330458a239c52c988fb4a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cea970022dd426cb620e38924a5299f4 = $(`<div id="html_cea970022dd426cb620e38924a5299f4" style="width: 100.0%; height: 100.0%;">Nantes: 323204 habitants</div>`)[0];
+                popup_ce4cf390809330458a239c52c988fb4a.setContent(html_cea970022dd426cb620e38924a5299f4);
+            
+        
+
+        circle_marker_c84b5572febad2a722288fe9d1a87b78.bindPopup(popup_ce4cf390809330458a239c52c988fb4a)
+        ;
+
+        
+    
+    
+            var circle_marker_60bdd67ba9ef1e594fb486fc4cf1105f = L.circleMarker(
+                [43.6119, 3.8772],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_4ae77a84f6f01b926689229648575fcb);
+        
+    
+        var popup_d48aac6565a6db884db2e8eb896e4c13 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9c15b61e2ee0ba7634aed00d36e5baf4 = $(`<div id="html_9c15b61e2ee0ba7634aed00d36e5baf4" style="width: 100.0%; height: 100.0%;">Montpellier: 302454 habitants</div>`)[0];
+                popup_d48aac6565a6db884db2e8eb896e4c13.setContent(html_9c15b61e2ee0ba7634aed00d36e5baf4);
+            
+        
+
+        circle_marker_60bdd67ba9ef1e594fb486fc4cf1105f.bindPopup(popup_d48aac6565a6db884db2e8eb896e4c13)
+        ;
+
+        
+    
+    
+            var circle_marker_29b883ad38662c6c8bb144ea18a9a2ea = L.circleMarker(
+                [48.5833, 7.7458],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_4ae77a84f6f01b926689229648575fcb);
+        
+    
+        var popup_906bbefb1bd89c48efe5ca370316941e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_223d48c401f813f2be76f47274127c44 = $(`<div id="html_223d48c401f813f2be76f47274127c44" style="width: 100.0%; height: 100.0%;">Strasbourg: 291313 habitants</div>`)[0];
+                popup_906bbefb1bd89c48efe5ca370316941e.setContent(html_223d48c401f813f2be76f47274127c44);
+            
+        
+
+        circle_marker_29b883ad38662c6c8bb144ea18a9a2ea.bindPopup(popup_906bbefb1bd89c48efe5ca370316941e)
+        ;
+
+        
+    
+    
+            var circle_marker_2fde94de246d8b3d0fb5e52ff6dd3939 = L.circleMarker(
+                [50.6278, 3.0583],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3, "stroke": true, "weight": 3}
+            ).addTo(map_4ae77a84f6f01b926689229648575fcb);
+        
+    
+        var popup_d5062a9b6624c07d9807070bc2dffdbd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_eab86ffc65ac6b37ee333f69859f162d = $(`<div id="html_eab86ffc65ac6b37ee333f69859f162d" style="width: 100.0%; height: 100.0%;">Lille: 236710 habitants</div>`)[0];
+                popup_d5062a9b6624c07d9807070bc2dffdbd.setContent(html_eab86ffc65ac6b37ee333f69859f162d);
+            
+        
+
+        circle_marker_2fde94de246d8b3d0fb5e52ff6dd3939.bindPopup(popup_d5062a9b6624c07d9807070bc2dffdbd)
+        ;
+
+        
+    
+</script>
+</html>
